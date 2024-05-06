@@ -32,6 +32,9 @@ public class MorraCinese {
 							+ mossaComputer + ". Quindi abbiamo un pareggio, il punteggio rimarrà invariato.");
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// vittoria utente sasso
 				} else if (mossaComputer.equalsIgnoreCase("forbici") && mossaUtente.equalsIgnoreCase("sasso")) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
@@ -39,6 +42,9 @@ public class MorraCinese {
 					punteggioUtente++;
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// vittoria utente carta
 				} else if (mossaComputer.equalsIgnoreCase("sasso") && mossaUtente.equalsIgnoreCase("carta")) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
@@ -46,6 +52,9 @@ public class MorraCinese {
 					punteggioUtente++;
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// vittoria utente forbici
 				} else if (mossaComputer.equalsIgnoreCase("carta") && mossaUtente.equalsIgnoreCase("forbici")) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
@@ -53,6 +62,9 @@ public class MorraCinese {
 					punteggioUtente++;
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// vittoria computer forbici
 				} else if (mossaComputer.equalsIgnoreCase("forbici") && mossaUtente.equalsIgnoreCase("carta")) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
@@ -60,6 +72,9 @@ public class MorraCinese {
 					punteggioComputer++;
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// vittoria computer carta
 				} else if (mossaComputer.equalsIgnoreCase("carta") && mossaUtente.equalsIgnoreCase("sasso")) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
@@ -67,6 +82,9 @@ public class MorraCinese {
 					punteggioComputer++;
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// vittoria computer sasso
 				} else if (mossaComputer.equalsIgnoreCase("sasso") && mossaUtente.equalsIgnoreCase("forbici")) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
@@ -74,11 +92,15 @@ public class MorraCinese {
 					punteggioComputer++;
 					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
+						if(punteggioComputer<5&&punteggioUtente<5) {
+						System.out.println("Inserisci una nuova mossa:");
+						}
 					// inserimento non valido
 				} else {
 					System.out.println("La mossa inserita non è valida, si prega di inserire una mossa corretta:");
 				}
-				// fine ciclo while
+				
+				// fine ciclo do while
 
 			} while (punteggioComputer < 5 && punteggioUtente < 5);
 			// vincitore
