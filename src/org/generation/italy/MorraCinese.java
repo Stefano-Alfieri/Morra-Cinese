@@ -35,8 +35,8 @@ public class MorraCinese {
 						if(punteggioComputer<5&&punteggioUtente<5) {
 						System.out.println("Inserisci una nuova mossa:");
 						}
-					// vittoria utente sasso
-				} else if (mossaComputer.equalsIgnoreCase("forbici") && mossaUtente.equalsIgnoreCase("sasso")) {
+					// vittoria utente 
+				} else if ((mossaComputer.equalsIgnoreCase("forbici") && mossaUtente.equalsIgnoreCase("sasso")) || (mossaComputer.equalsIgnoreCase("sasso") && mossaUtente.equalsIgnoreCase("carta"))||(mossaComputer.equalsIgnoreCase("carta") && mossaUtente.equalsIgnoreCase("forbici"))) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
 							+ mossaComputer + ". Quindi hai vinto, il tuo punteggio aumenterà di uno.");
 					punteggioUtente++;
@@ -44,49 +44,9 @@ public class MorraCinese {
 							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
 						if(punteggioComputer<5&&punteggioUtente<5) {
 						System.out.println("Inserisci una nuova mossa:");
-						}
-					// vittoria utente carta
-				} else if (mossaComputer.equalsIgnoreCase("sasso") && mossaUtente.equalsIgnoreCase("carta")) {
-					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
-							+ mossaComputer + ". Quindi hai vinto, il tuo punteggio aumenterà di uno.");
-					punteggioUtente++;
-					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
-							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
-						if(punteggioComputer<5&&punteggioUtente<5) {
-						System.out.println("Inserisci una nuova mossa:");
-						}
-					// vittoria utente forbici
-				} else if (mossaComputer.equalsIgnoreCase("carta") && mossaUtente.equalsIgnoreCase("forbici")) {
-					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
-							+ mossaComputer + ". Quindi hai vinto, il tuo punteggio aumenterà di uno.");
-					punteggioUtente++;
-					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
-							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
-						if(punteggioComputer<5&&punteggioUtente<5) {
-						System.out.println("Inserisci una nuova mossa:");
-						}
-					// vittoria computer forbici
-				} else if (mossaComputer.equalsIgnoreCase("forbici") && mossaUtente.equalsIgnoreCase("carta")) {
-					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
-							+ mossaComputer + ". Quindi hai perso, il punteggio del computer aumenterà di uno.");
-					punteggioComputer++;
-					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
-							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
-						if(punteggioComputer<5&&punteggioUtente<5) {
-						System.out.println("Inserisci una nuova mossa:");
-						}
-					// vittoria computer carta
-				} else if (mossaComputer.equalsIgnoreCase("carta") && mossaUtente.equalsIgnoreCase("sasso")) {
-					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
-							+ mossaComputer + ". Quindi hai perso, il punteggio del computer aumenterà di uno.");
-					punteggioComputer++;
-					System.out.println("L'attuale punteggio del computer è " + punteggioComputer
-							+ ". Il il tuo attuale punteggio è " + punteggioUtente + ".");
-						if(punteggioComputer<5&&punteggioUtente<5) {
-						System.out.println("Inserisci una nuova mossa:");
-						}
-					// vittoria computer sasso
-				} else if (mossaComputer.equalsIgnoreCase("sasso") && mossaUtente.equalsIgnoreCase("forbici")) {
+						}	
+					// vittoria computer 
+				} else if ((mossaComputer.equalsIgnoreCase("forbici") && mossaUtente.equalsIgnoreCase("carta"))||(mossaComputer.equalsIgnoreCase("carta") && mossaUtente.equalsIgnoreCase("sasso"))||(mossaComputer.equalsIgnoreCase("sasso") && mossaUtente.equalsIgnoreCase("forbici"))) {
 					System.out.println("Hai selezionato " + mossaUtente + " e il computer ha selezionato "
 							+ mossaComputer + ". Quindi hai perso, il punteggio del computer aumenterà di uno.");
 					punteggioComputer++;
